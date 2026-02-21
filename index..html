@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book advanced diagnostic tests at affordable prices with Molecular Diagnostics & Therapy. Get up to 30% OFF on PET-CT, MRI & Full Body Checkups. Accurate reports & home collection available.">
+    <meta name="keywords"
+        content="PET-CT Scan, MRI Scan, CT Scan, Pathology, Health Checkup, Diagnostic Center, Molecular Diagnostics">
+    <meta name="author" content="Molecular Diagnostics & Therapy">
+    <meta property="og:title" content="Book Diagnostic Tests | Up to 30% OFF | Molecular Diagnostics">
+    <meta property="og:description"
+        content="Get fast, accurate reports for PET-CT, MRI, and Pathology. Book now and save big with our limited-time offer.">
+    <meta property="og:url" content="https://www.molecularit.com/">
+
+    <title>Book Advanced Diagnostic Tests | Up to 30% OFF | Molecular Diagnostics</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header">
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container navbar-content">
+            <a href="#" class="logo">
+                <img src="molecular-logo.jpg" alt="Molecular Diagnostics & Therapy" class="logo-img">
+            </a>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#upload-rx">Upload Prescription</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="tel:+919876543210" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-phone"></i>
+                        +91 98765 43210</a>
+                    <a href="#hero" class="btn btn-primary btn-sm">Book Now</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#upload-rx">Upload Prescription</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="discount-badge">
+                    <span>Up to</span> <strong>30% OFF</strong> <span>on all tests</span>
+                </div>
+                <h1 class="hero-title">Your Health, <br><span class="text-highlight">Our Priority.</span></h1>
+                <p class="hero-subtitle">Experience advanced diagnostic imaging & pathology services with high accuracy
+                    and fast reports in Tech Park.</p>
+                <div class="hero-buttons">
+                    <a href="#offers" class="btn btn-primary btn-lg">View Offers</a>
+                    <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <i class="fa-solid fa-vial-circle-check"></i>
+                        <span>NABL Accredited</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fa-solid fa-house-medical-circle-check"></i>
+                        <span>Home Collection</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-form-wrapper" data-aos="fade-left">
+                <div class="lead-form-card glass-effect">
+                    <div class="form-header text-center">
+                        <h3>Book Your Test Now</h3>
+                        <p>Fill the form to get a callback</p>
+                    </div>
+                    <form id="leadForm" class="lead-form">
+                        <div class="form-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" placeholder="Full Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="phone" placeholder="Phone Number *" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa-solid fa-list-check"></i>
+                            <select id="testSelect">
+                                <option value="" disabled selected>Select Test</option>
+                                <option value="PET-CT">PET-CT Scan (30% OFF)</option>
+                                <option value="MRI">MRI Scan (₹500 OFF)</option>
+                                <option value="CT Scan">CT Scan</option>
+                                <option value="Full Body">Full Body Checkup</option>
+                                <option value="Pathology">Pathology Test</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="terms" required checked>
+                            <label for="terms">I agree to terms & conditions.</label>
+                        </div>
+                        <button type="submit" class="btn btn-gradient btn-block btn-lg">Book Appointment Now <i
+                                class="fa-solid fa-arrow-right"></i></button>
+
+                        <p class="trust-text text-center mt-3">
+                            <i class="fa-solid fa-lock"></i> 100% Secure & Confidential Booking
+                        </p>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="section bg-light-blue"
+        style="background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);">
+        <div class="container">
+            <div class="section-accent-header text-center" data-aos="fade-up">
+                <span class="section-accent-badge">Exclusive Benefits</span>
+                <h2 class="section-title-premium">Limited Time Health Packages</h2>
+                <p class="section-subtitle-premium">Take advantage of our specially curated health packages designed for
+                    comprehensive wellness at unbeatable prices.</p>
+            </div>
+
+            <div class="offers-grid">
+                <!-- Offer 1 -->
+                <div class="offer-card" data-aos="flip-left">
+                    <div class="offer-badge">Best Value</div>
+                    <h3>Full Body Checkup</h3>
+                    <p class="offer-desc">Includes 80+ Tests (Vitamin D, B12, Thyroid, Lipid...)</p>
+                    <div class="price-box">
+                        <span class="old-price">₹4,999</span>
+                        <span class="new-price">₹3,499</span>
+                    </div>
+                    <div class="discount-tag">Flat 30% OFF</div>
+                    <a href="#hero" class="btn btn-primary btn-sm">Claim Offer</a>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card featured" data-aos="flip-up">
+                    <div class="offer-badge highlight">Limited</div>
+                    <h3>MRI & CT Scans</h3>
+                    <p class="offer-desc">High Definition 3T MRI & 128 Slice CT Scan</p>
+                    <div class="price-box">
+                        <span class="discount-text">Get Flat</span>
+                        <span class="new-price">₹500 OFF</span>
+                    </div>
+                    <div class="discount-tag">On All Scans</div>
+                    <a href="#hero" class="btn btn-primary btn-sm">Claim Offer</a>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card" data-aos="flip-right">
+                    <div class="offer-badge">Free</div>
+                    <h3>Doctor Consultation</h3>
+                    <p class="offer-desc">Free expert consultation with every package booking.</p>
+                    <div class="price-box">
+                        <span class="old-price">₹1,000</span>
+                        <span class="new-price">₹0</span>
+                    </div>
+                    <div class="discount-tag">First 100 Patients</div>
+                    <a href="#hero" class="btn btn-primary btn-sm">Claim Offer</a>
+                </div>
+            </div>
+
+            <div class="countdown-wrapper text-center" data-aos="fade-up">
+                <p class="countdown-label">Offers Expire In:</p>
+                <div id="countdown" class="countdown-timer">
+                    <div class="timer-box"><span id="hours">23</span><small>Hours</small></div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box"><span id="minutes">59</span><small>Mins</small></div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box"><span id="seconds">59</span><small>Secs</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Patients Served</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Certified Labs</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Expert Doctors</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Accuracy Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Our Key Services</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="services-wrapper">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=500&q=80"
+                            alt="PET-CT Scan">
+                    </div>
+                    <div class="service-body">
+                        <h3>PET-CT Scan</h3>
+                        <p>Advanced cancer detection with high precision imaging.</p>
+                        <a href="#hero" class="btn btn-outline btn-block">Book Test</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=500&q=80"
+                            alt="MRI Scan">
+                    </div>
+                    <div class="service-body">
+                        <h3>MRI Scan</h3>
+                        <p>Detailed imaging for brain, spine, and joints using 3T MRI.</p>
+                        <a href="#hero" class="btn btn-outline btn-block">Book Test</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=500&q=80"
+                            alt="Pathology">
+                    </div>
+                    <div class="service-body">
+                        <h3>Pathology Tests</h3>
+                        <p>Complete range of blood tests with NABL accredited accuracy.</p>
+                        <a href="#hero" class="btn btn-outline btn-block">Book Test</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-img">
+                        <img src="ct-scan.jpg" alt="CT Scan">
+                    </div>
+                    <div class="service-body">
+                        <h3>CT Scan</h3>
+                        <p>128-Slice CT Scan for rapid and detailed body imaging.</p>
+                        <a href="#hero" class="btn btn-outline btn-block">Book Test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="badge-accent">Digital Health Suite</span>
+                <h2 class="section-title">Access Your Personal Health Dashboard</h2>
+                <p class="section-subtitle">Login with your mobile number to view reports, track health history and
+                    download reports anytime.</p>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="dashboard-features" data-aos="fade-right">
+                    <div class="dashboard-grid">
+                        <div class="feature-card-sm">
+                            <div class="icon-circle"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="feature-info">
+                                <h4>Secure Mobile Login</h4>
+                                <p>Fast and safe OTP-based access using your mobile number.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-sm">
+                            <div class="icon-circle"><i class="fa-solid fa-file-arrow-down"></i></div>
+                            <div class="feature-info">
+                                <h4>View & Download Reports</h4>
+                                <p>Access all your diagnostic reports in one place instantly.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-sm">
+                            <div class="icon-circle"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="feature-info">
+                                <h4>Track Health History</h4>
+                                <p>Monitor your health trends with historical data visualization.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-sm">
+                            <div class="icon-circle"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                            <div class="feature-info">
+                                <h4>Upload & Store Prescriptions</h4>
+                                <p>Securely store your medical prescriptions for future reference.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-sm">
+                            <div class="icon-circle"><i class="fa-solid fa-rotate-right"></i></div>
+                            <div class="feature-info">
+                                <h4>Re-book Tests Easily</h4>
+                                <p>One-click re-booking for your regular health tests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-login" data-aos="fade-left">
+                    <div class="login-card glass-effect">
+                        <div id="login-step-1">
+                            <div class="login-header">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <h3>Patient Dashboard</h3>
+                                <p>Enter mobile number to login</p>
+                            </div>
+                            <form id="otp-form-step-1" class="mini-form">
+                                <div class="form-group-mini">
+                                    <div class="input-with-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <input type="tel" id="login-phone" placeholder="Enter Mobile Number" required
+                                            pattern="[0-9]{10}">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Send OTP</button>
+                            </form>
+                        </div>
+
+                        <div id="login-step-2" class="hidden">
+                            <div class="login-header">
+                                <i class="fa-solid fa-key"></i>
+                                <h3>Enter OTP</h3>
+                                <p>Sent to <span id="display-phone" class="fw-bold"></span></p>
+                            </div>
+                            <form id="otp-form-step-2" class="mini-form">
+                                <div class="form-group-mini">
+                                    <div class="otp-input-container">
+                                        <input type="text" class="otp-input" maxlength="1" required>
+                                        <input type="text" class="otp-input" maxlength="1" required>
+                                        <input type="text" class="otp-input" maxlength="1" required>
+                                        <input type="text" class="otp-input" maxlength="1" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-gradient btn-block">Verify & Login</button>
+                                <button type="button" id="back-to-step-1" class="btn btn-link btn-block">Change Mobile
+                                    Number</button>
+                            </form>
+                        </div>
+
+                        <div id="login-success" class="hidden text-center">
+                            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3>Welcome Back!</h3>
+                            <p>You have successfully logged into your health dashboard.</p>
+                            <a href="#" class="btn btn-primary mt-3">Go to Dashboard</a>
+                        </div>
+
+                        <div class="login-footer text-center">
+                            <p><i class="fa-solid fa-lock"></i> 100% Secure & Confidential</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Prescription -->
+    <section id="upload-rx" class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Have a Prescription?</h2>
+                <p>Upload it here and our experts will call you with the best price.</p>
+            </div>
+
+            <div class="upload-container glass-panel" data-aos="zoom-in">
+                <div class="upload-area" id="dropArea">
+                    <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                    <h3>Drag & Drop or Click to Upload</h3>
+                    <p class="text-muted">Supports JPG, PNG, PDF (Max 5MB)</p>
+                    <input type="file" id="fileUpload" hidden accept="image/*,.pdf">
+                </div>
+                <div id="filePreview" class="file-preview hidden">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span id="fileName">filename.jpg</span>
+                    <button class="remove-btn" id="removeFile"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="upload-actions text-center mt-3">
+                    <button id="uploadSubmit" class="btn btn-primary" disabled>Upload & Get Callback</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Testimonials Section -->
+    <section id="testimonials" class="section testimonial-premium-bg overflow-hidden">
+        <div class="container text-center">
+            <div class="testimonial-header mb-5" data-aos="fade-up">
+                <span class="badge-accent">Patient Trust</span>
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="section-subtitle mx-auto" style="max-width: 600px;">Trusted by over 10,000+ patients for
+                    accurate diagnostics and professional medical care.</p>
+
+                <div class="google-review-pill mt-4 mx-auto">
+                    <div class="google-brand">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_logo_icon_2022.png"
+                            alt="Google">
+                        <span>4.9/5 Rating</span>
+                    </div>
+                    <div class="pill-divider"></div>
+                    <div class="stars-gold">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper testimonial-slider centered-slides" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-clean">
+                            <div class="tc-quote-top"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="tc-text">"The experience was seamless. From the home collection to the digital
+                                reports, everything was top-notch. Molecular Diagnostics is truly a brand I trust for my
+                                family's health."</p>
+                            <div class="tc-user">
+                                <h5 class="tc-name">Rajesh Singhania <i class="fa-solid fa-circle-check verified-badge"
+                                        style="color: #00b894;"></i></h5>
+                                <span class="tc-meta">Member since 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-clean">
+                            <div class="tc-quote-top"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="tc-text">"Very professional service. The phlebotomist was on time and very gentle.
+                                Got my reports on WhatsApp within hours. Highly recommended!"</p>
+                            <div class="tc-user">
+                                <h5 class="tc-name">Suresh Kumar <i class="fa-solid fa-circle-check verified-badge"
+                                        style="color: #00b894;"></i></h5>
+                                <span class="tc-meta">Verified Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="testimonial-cta mt-5" data-aos="fade-up">
+                <p class="fw-bold text-primary mb-3"><i class="fa-solid fa-circle-check"></i> 98.5% Patient Satisfaction
+                    Rate</p>
+                <a href="#hero" class="btn btn-primary btn-lg">Join 10,000+ Happy Patients</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Molecular Diagnostics & Therapy</h3>
+                    <p>Your trusted partner for advanced diagnostics and molecular therapy.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@molecularit.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Tech Park, Health City, India</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Molecular Diagnostics & Therapy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919876543210" class="float-whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
